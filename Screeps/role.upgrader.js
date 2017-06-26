@@ -11,7 +11,17 @@ var roleUpgrader = {
             creep.memory.working = true;
         }
 
-        if 
+        if (creep.memory.working) {
+            if (creep.transfer(Game.room.controller) == ERR_NOT_IN_RANGE) {
+                creep.moveTo(Game.room.controller);
+            }
+        }
+        else {
+            var source = creep.room.find(FIND_SOURCES);
+            if (creep.harvest(source[1]) == ERR_NOT_IN_RANGE) {
+                creep.moveto(source[1]);
+            }
+        }
         
     }
 

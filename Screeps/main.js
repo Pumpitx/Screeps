@@ -1,5 +1,6 @@
 //Import der Module
 var roleHarvester = require("role.harvester");
+var roleUpgrader = require("role.upgrader");
 //Endlosschleife ( Ausfuehrung je Tick )
 module.exports.loop = function () {
 

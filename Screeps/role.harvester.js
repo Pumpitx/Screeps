@@ -6,7 +6,7 @@ var roleHarvester = {
         if (creep.memory.working == true && creep.carry.energy == 0) {
             creep.memory.working = false;
         }
-        else if(creep.memory.working == false && creep.carry.energy == creep.carry.carryCapacity)
+        else if(creep.memory.working == false && creep.carry.energy == creep.carryCapacity)
         {
             creep.memory.working = true;
         }
@@ -19,8 +19,8 @@ var roleHarvester = {
         }
         else {
             var source = creep.room.find(FIND_SOURCES);
-            if (creep.harvest(source[0]) == ERR_NOT_IN_RANGE) {
-                creep.moveto(source[0]);
+            if (creep.harvest(source[1]) == ERR_NOT_IN_RANGE) {
+                creep.moveTo(source[1]);
             }
         }
     }

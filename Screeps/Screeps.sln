@@ -8,6 +8,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Default", "Default", "{B87C
 		main.js = main.js
 		role.harvester.js = role.harvester.js
 		role.upgrader.js = role.upgrader.js
+		SpawnNewCreeps.js = SpawnNewCreeps.js
 	EndProjectSection
 EndProject
 Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "ScreepsAutocomplete", "..\..\ScreepsAutocomplete\", "{9643A8D3-A20C-4035-88BF-7206D887E33E}"

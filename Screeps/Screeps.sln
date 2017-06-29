@@ -6,6 +6,7 @@ MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Default", "Default", "{B87C039D-365D-472F-AE9A-60FD1885FC29}"
 	ProjectSection(SolutionItems) = preProject
 		main.js = main.js
+		role.builder.js = role.builder.js
 		role.harvester.js = role.harvester.js
 		role.upgrader.js = role.upgrader.js
 		SpawnNewCreeps.js = SpawnNewCreeps.js

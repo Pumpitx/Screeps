@@ -1,6 +1,7 @@
 //Import der Module
 var roleHarvester = require("role.harvester");
 var roleUpgrader = require("role.upgrader");
+var CheckCreeps = require("SpawnNewCreeps");
 //Endlosschleife ( Ausfuehrung je Tick )
 module.exports.loop = function () {
 
@@ -17,4 +18,6 @@ module.exports.loop = function () {
         // }
     }
 
+    CheckCreeps.run("harvester");
+    CheckCreeps.run("upgrader");
 }

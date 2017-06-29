@@ -12,3 +12,5 @@ var CheckCreeps = {
     }
 
 }
+
+module.exports = CheckCreeps;
